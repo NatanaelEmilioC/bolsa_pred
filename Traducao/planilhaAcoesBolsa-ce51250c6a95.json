@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "planilhaacoesbolsa",
+  "private_key_id": "ce51250c6a954b0686dc3f1b7691220d49c6d6f1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCnH4z+HiACe1dr\nxTXkEq2UkQS0yVOmeUg/Pw1TldxyZLjYXTzI54I1xOshp+9juZK2YydUIkmqmKZ4\nBZdjT4ePxFm8rUxJmMWd0bQAEv+W0iFrHwowx5rYUCp3xiBE3GPOmOXVytU+LmJI\nTtXLKuraShaO8GPekz8RU0vo+kw9Wyg+yPOQhywxo6NSkAgbgZ7Y8mGLJiO4kFeC\niwJt8XP4ons/6eA9N4oOkN7BjRQ58AryOl0YQBGz6I09J1F2Jj9TDzQU07sK7p7W\nfTeaja+QG+rgNx73taUVGWMAu6XX6Vs748GduH79l74J4sTbnYpjOAO+24J/kTEm\njq5Mexe/AgMBAAECggEANWoxo6TYQULP0auyCkfn/9SL5wZz/IDGFSTfawg6cbt8\nkvbV7zaDWRErv9GPg1W0LSQq1UqyNdrdVf4fgUfRgaNVtSbEe79e5g64088+rqNR\nuA2vMaESfjG9KRQDi07PfaBD0V2nY1zq38aGsY1xi7xjUmNF4EU6wpxXZkrdpDwi\nhU18K/CjwL+n9IDad4ebX34BkgsztFjUzeOAJ+OZxSD8lvN9eZvBk17obAbeFUQ9\nBZg2VkJ1RTTDNaCSvOv8wqSy/TXsd0Vx29Af8LNgTtMer9J9tuIIwzUvkEJM28SO\n+0MQmlWSTfgMrxFU5/LF1gsKl1borjiR9FTA2ylEOQKBgQDa6lI+f4TKbjAtU70U\nku9rzEK1f7vdme4O5ad3LnHsznWPQzYHEmirYW5wPabv0OyqKxQnROKDfszXlLwg\nuCQEDNR196OnIY3vB0BMtqLByeh/lDqoBGm2+qGuaDovggh2AqnyqKKneDDRZiHp\nO3lOCEXC61exOdoGYGXWbEQRxwKBgQDDbyr4Y943PV/7uOszCESIQeaNbDgdBh3v\nF8xBTwKm1yHxs5RkCkonMRK3nQ27mJT253XY3L9/xyAkFm2X9byMPBxHVVEOPpme\nmr1/frmYniCHze+5IcdJgxEgSxI875KIkt1ahGZhb3W9wADgAnsGKSgt8G5mGwQn\nrVW8sJ3KSQKBgQDRXYTmzOJdD+D3mLye7qAYQrQSDWXI3Cy3BqCQ9VRznEkGiMsl\nHFAKiBYtNmlvtiqB3M1beSABjsWt8Eu0Jygaz4JqiDp13zt1PUQbmhgyqj23tjYa\n9o18OFtlB72OLhiVdJrAvtNAw0w9GCaafwzWukat0pJ9psyDiLIczlKThQKBgC/W\nhGQsvfYzlc0eJKRnP69CwlaXyNyB5M3ju2G5H2MLggmR9Z7PTftt7bD4RqZG4R/W\n5GfjERUL/vgWbVknE7IX/KwRXDfqZtwF8KDGulN7UWcsp6Nfe1KpPIX1Gk/ELNA1\ncu13P0BWcjGyUASFVuvZIzarhbqEnm2/5h679MPRAoGBALu+5eBZo3cjkCTdXsRP\nbuszoShSakGmrGnNPdtaWn/dNs1aRXPna1J0n1KmDRiuQBBOC4BSJXv5ILq9F32x\nAY4m1IRO71OojV6S/zlP0xSOFfCQEkVw8SGSa9pN/66cL1+sWnkn/r8t8Weje9ZT\nMm80bQ/m7d9/D0gEeuAuBfMN\n-----END PRIVATE KEY-----\n",
+  "client_email": "natanaelemilio@planilhaacoesbolsa.iam.gserviceaccount.com",
+  "client_id": "106353192841840851388",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/natanaelemilio%40planilhaacoesbolsa.iam.gserviceaccount.com"
+}

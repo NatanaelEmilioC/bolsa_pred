@@ -1,0 +1,65 @@
+2019-11-26 06:22:26 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://istoe.com.br/categoria/economia/page/904/. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-11-26 06:22:26 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://istoe.com.br/categoria/economia/page/904/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2019-11-26 06:23:07 [scrapy.extensions.logstats] INFO: Crawled 904 pages (at 1 pages/min), scraped 18060 items (at 20 items/min)
+2019-11-26 06:24:07 [scrapy.extensions.logstats] INFO: Crawled 904 pages (at 0 pages/min), scraped 18060 items (at 0 items/min)
+2019-11-26 06:24:37 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://istoe.com.br/categoria/economia/page/904/> (failed 2 times): TCP connection timed out: 110: Connection timed out.
+2019-11-26 06:25:07 [scrapy.extensions.logstats] INFO: Crawled 904 pages (at 0 pages/min), scraped 18060 items (at 0 items/min)
+2019-11-26 06:26:07 [scrapy.extensions.logstats] INFO: Crawled 904 pages (at 0 pages/min), scraped 18060 items (at 0 items/min)
+2019-11-26 06:26:48 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://istoe.com.br/categoria/economia/page/904/> (failed 3 times): TCP connection timed out: 110: Connection timed out.
+2019-11-26 06:26:48 [scrapy.core.scraper] ERROR: Error downloading <GET https://istoe.com.br/categoria/economia/page/904/>
+Traceback (most recent call last):
+  File "/home/natanael/anaconda3/envs/my_root/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 110: Connection timed out.
+2019-11-26 06:26:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-11-26 06:26:49 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "/home/natanael/anaconda3/envs/my_root/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/natanael/MEGA/UFOP/UFOP/8º periodo/CSI498 - TRABALHO DE CONCLUSAO DE CURSO I - Turma 11/Desenvolvimento/Projeto_teste/Meu_Scrapy/Meu_Scrapy/pipelines.py", line 23, in close_spider
+    ordered_list[int(i['id'])-1] = json.dumps(dict(i))
+  File "/home/natanael/anaconda3/envs/my_root/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/home/natanael/anaconda3/envs/my_root/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/natanael/anaconda3/envs/my_root/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/natanael/anaconda3/envs/my_root/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'date' is not JSON serializable
+2019-11-26 06:26:49 [scrapy.extensions.feedexport] INFO: Stored json feed (18060 items) in: istoe.json
+2019-11-26 06:26:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 3,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 2,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseFailed': 1,
+ 'downloader/request_bytes': 270825,
+ 'downloader/request_count': 907,
+ 'downloader/request_method_count/GET': 907,
+ 'downloader/response_bytes': 25631048,
+ 'downloader/response_count': 904,
+ 'downloader/response_status_count/200': 904,
+ 'elapsed_time_seconds': 4601.314903,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 11, 26, 10, 26, 49, 92790),
+ 'item_scraped_count': 18060,
+ 'log_count/DEBUG': 18976,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 87,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 158015488,
+ 'memusage/startup': 103104512,
+ 'request_depth_max': 903,
+ 'response_received_count': 904,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 1,
+ 'retry/reason_count/twisted.web._newclient.ResponseFailed': 1,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 906,
+ 'scheduler/dequeued/memory': 906,
+ 'scheduler/enqueued': 906,
+ 'scheduler/enqueued/memory': 906,
+ 'start_time': datetime.datetime(2019, 11, 26, 9, 10, 7, 777887)}
+2019-11-26 06:26:49 [scrapy.core.engine] INFO: Spider closed (finished)

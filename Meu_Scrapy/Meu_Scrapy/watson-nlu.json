@@ -1,0 +1,13 @@
+[
+  {
+    "apikey": "IwjxlvkA9KXV16rQ3uramIxsXegr53i-lJp0GPzY5N0W",
+    "iam_apikey_description": "Auto-generated for key 6acee170-e8bd-473f-be40-c83bee117394",
+    "iam_apikey_name": "Auto-generated service credentials",
+    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+    "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/ab30e2e6fb7645d6a11a22188115e701::serviceid:ServiceId-2cf94786-f35f-4a67-a5ab-63c13c18026d",
+    "url": "https://gateway.watsonplatform.net/natural-language-understanding/api"
+  },
+  {
+    "quandl_key": "DoW2sF_Kdxem8p-zFuCk"
+  }
+]

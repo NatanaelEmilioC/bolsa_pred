@@ -1,0 +1,30 @@
+realizando testes para utilização do polyglot sujestão do fernado para analise de sentimentos
+
+$ pip install polyglot
+
+https://polyglot.readthedocs.io/en/latest/Installation.html
+
+
+dia  06/02/2020 a centauro apresentou valorização elevada para suas ações devido à aquisição da nike o 
+
+André Machado, o Ogro de Wall Street
+@abcmachado
+
+foi o primeiro a soltar a noticia às 9:28 no tweeter
+
+MyCAP Investimentos
+@mycapinvest
+
+foi o segundo a soltar a noticia às 10:18 no tweeter
+
+20/02/2020
+
+as medidas de contenção do covid-19 propostas pela china implicaram em uma previsão de recuo de 1/4 no valor
+previsto para o PIB, o que causou uma sensação de insegurança nos investidores que não conseguiram precificar
+no mercado asiático e europeu
+
+BACEN corta compulsório e injeta $49 Bi na economia (noticia saiu na valor economico pro às 8:16) explicações 
+foram agendadas para às 10:30
+
+a cielo anunciou a liberação de mais ações na bolsa o que fez o valor cair em 3,36%
+

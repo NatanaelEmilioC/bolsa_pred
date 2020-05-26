@@ -1,0 +1,63 @@
+"""
+authenticator = IAMAuthenticator('P3xVYWx66kdOxKcCaUCGKX8gpjtcdx_6asyLxYQFcbtM')
+
+natural_language_understanding.set_service_url('https://gateway.watsonplatform.net/natural-language-understanding/api')
+
+curl -X POST -u "apikey:P3xVYWx66kdOxKcCaUCGKX8gpjtcdx_6asyLxYQFcbtM" \
+"https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2019-07-12" \
+--header "Content-Type: application/json" \
+--data '{
+  "url": "http://newsroom.ibm.com/Guerbet-and-IBM-Watson-Health-Announce-Strategic-Partnership-for-Artificial-Intelligence-in-Medical-Imaging-Liver",
+  "features": {
+    "sentiment": {},
+    "categories": {},
+    "concepts": {},
+    "entities": {},
+    "keywords": {}
+  }
+}'
+
+
+import json
+from ibm_watson import NaturalLanguageUnderstandingV1
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+from ibm_watson.natural_language_understanding_v1
+    import Features, CategoriesOptions
+
+authenticator = IAMAuthenticator('P3xVYWx66kdOxKcCaUCGKX8gpjtcdx_6asyLxYQFcbtM')
+natural_language_understanding = NaturalLanguageUnderstandingV1(
+    version='2019-07-12',
+    authenticator=authenticator
+)
+
+natural_language_understanding.set_service_url('https://gateway.watsonplatform.net/natural-language-understanding/api')
+
+response = natural_language_understanding.analyze(
+    url='www.ibm.com',
+    features=Features(categories=CategoriesOptions(limit=3))).get_result()
+
+print(json.dumps(response, indent=2))
+
+#data = '{\n  "text": "Eu odeio laranjas.",\n  "features": {\n    "sentiment": {\n      "targets": [\n        "laranjas",\n        "oranges",\n        "broccoli"\n      ]\n    },\n    "keywords": {\n      "emotion": true\n    }\n  }\n}'
+
+response = requests.post('https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze', headers=headers, params=params, data=data, auth=('apikey', 'P3xVYWx66kdOxKcCaUCGKX8gpjtcdx_6asyLxYQFcbtM'))
+
+#NB. Original query string below. It seems impossible to parse and
+#reproduce query strings 100% accurately so the one below is given
+#in case the reproduced version is not "correct".
+# response = requests.post('https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2019-07-12', headers=headers, data=data, auth=('apikey', 'P3xVYWx66kdOxKcCaUCGKX8gpjtcdx_6asyLxYQFcbtM'))
+
+print(response.text)
+
+"""
+
+# resultado = get_targets('Saudi Aramco tem queda de 21% no lucro em 2019. Petroleira saudita Aramco tem queda de 20,6% no lucro')
+
+# a = resultado.json()["keywords"]
+
+# # mydata = {"name": "Apple", "quantity": 42, "date": "2014-02-27" }
+# serialized_data = json.dumps(a)
+# ## to write to a textfile named "whatever":
+# with open('NLP/NLP_response.json', 'w', encoding='utf-8') as f:
+#     f.write(serialized_data)
+#     f.close()
